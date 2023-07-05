@@ -1,25 +1,12 @@
-const fs = require("fs")
-const http = require("http")
+// const http = require("./k1.js");
+// const express = require("express")
+// const app = express()
+// app.get ("/",(req,res)=>{
+//     res.send("hello express")
+// });
+// app.listen(8000 ,()=>{  
+//     console.log("localhost www.com")
+// })
 
-http.createServer((req ,res)=>{
-const filename ="index.html"
-
-    if(req.url=="/home"){
-        fs.readFile(filename,"utf-8",(err,data)=>{
-            if(err){
-                console.log(err)
-                res.writeHead(500,{"content-type":"text/html"})
-                res.end("sever on")
-                return;
-            }
-        })
-    }
-    else if(req.url=="/submit"){
-        fs.readFile(filename,"utf-8",(err,data)=>{
-            // res.send(req.query)
-            res.end(data)
-        })
-     }
-
-
-}).listen(7000)
+// const a = require("./k3");
+const aq = require("./k8");
